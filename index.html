@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador de Artistas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" type="module"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Roboto+Mono&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="title">Buscador de artistas y sus canciones</h1>
+    <form class="form">
+      <label class="form__label">Artista: <input type="text" name="artist" class="form__artist"
+          placeholder="Ej. The Eagles"></label>
+      <label class="form__label">Canción: <input type="text" name="song" class="form__song"
+          placeholder="Ej. Hotel California"></label>
+      <input type="submit" value="Buscar" class="form__submit-btn" disabled>
+    </form>
+  </header>
+  <section class="bio-song">
+    <!-- BIOGRAFÍA -->
+    <article class="biography">
+      <header class="biography__header">
+        <h2 class="biography__title"></h2>
+        <img src="" alt="" class="biography__img">
+      </header>
+      <p class="biography__p"></p>
+    </article>
+    <!-- LÍRICAS -->
+    <aside class="song none">
+      <h2 class="song__title"></h2>
+      <p class="song__lyrics"></p>
+    </aside>
+  </section>
+  <!-- LOADER -->
+  <div class="lds-spinner none">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <!-- MENSAJE DE ERROR -->
+  <div class="error-msg none">
+    <p>Artista no encontrado</p>
+  </div>
+  <footer class="footer">
+    <p class="footer__p">Hecho por <a href="" target="_blank" rel="noopener noreferrer" class="footer__link">Javier
+        Valeriano</a></p>
+  </footer>
+</body>
+
+</html>
